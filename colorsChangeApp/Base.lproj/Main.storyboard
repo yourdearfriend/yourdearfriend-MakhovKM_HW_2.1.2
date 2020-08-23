@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,24 +12,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorsChangeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-p6-fhJ">
-                                <rect key="frame" x="16" y="20" width="288" height="281"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-p6-fhJ" userLabel="AllView">
+                                <rect key="frame" x="16" y="64" width="382" height="314"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8U-Ld-0fV">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="101"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="134"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="f8U-Ld-0fV" secondAttribute="height" multiplier="191:67" id="aLp-BK-kor"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="diN-Wo-qMr">
-                                        <rect key="frame" x="0.0" y="141" width="288" height="140"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="diN-Wo-qMr" userLabel="LabelsAndSliders">
+                                        <rect key="frame" x="0.0" y="174" width="382" height="140"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="0TY-H4-vg1">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="0TY-H4-vg1" userLabel="NameLabels">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="140"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdk-oc-tfD">
@@ -55,7 +55,7 @@
                                                     <constraint firstAttribute="width" constant="60" id="b8w-xJ-Syf"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="735-Yw-k9k">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="735-Yw-k9k" userLabel="ValueLabels">
                                                 <rect key="frame" x="70" y="0.0" width="50" height="140"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHG-yq-1QE">
@@ -81,23 +81,23 @@
                                                     <constraint firstAttribute="width" constant="50" id="IFo-k6-U1C"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Fzn-hH-PeA">
-                                                <rect key="frame" x="130" y="0.0" width="158" height="140"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Fzn-hH-PeA" userLabel=" ColorSliders">
+                                                <rect key="frame" x="130" y="0.0" width="252" height="140"/>
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EC6-rO-1l6">
-                                                        <rect key="frame" x="-2" y="0.0" width="162" height="31"/>
+                                                        <rect key="frame" x="-2" y="0.0" width="256" height="31"/>
                                                         <connections>
                                                             <action selector="firstColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="h3S-pK-rgJ"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-qG-2kt">
-                                                        <rect key="frame" x="-2" y="55" width="162" height="31"/>
+                                                        <rect key="frame" x="-2" y="55" width="256" height="31"/>
                                                         <connections>
                                                             <action selector="secondColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="aIV-9M-TwP"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-d8-mye">
-                                                        <rect key="frame" x="-2" y="110" width="162" height="31"/>
+                                                        <rect key="frame" x="-2" y="110" width="256" height="31"/>
                                                         <connections>
                                                             <action selector="thirdColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="vAc-5u-Le1"/>
                                                         </connections>
