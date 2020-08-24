@@ -47,20 +47,17 @@ class ViewController: UIViewController {
     // MARK: - IB Actions
     @IBAction func firstColorSliderAction() {
         setColor(valueLabel: currentValueFirstColorLabel,
-                 slider: firstColorSlider,
-                 color: .red)
+                 slider: firstColorSlider)
     }
     
     @IBAction func secondColorSliderAction() {
         setColor(valueLabel: currentValueSecondColorLabel,
-                 slider: secondColorSlider,
-                 color: .green)
+                 slider: secondColorSlider)
     }
     
     @IBAction func thirdColorSliderAction() {
         setColor(valueLabel: currentValueThirdColorLabel,
-                 slider: thirdColorSlider,
-                 color: .blue)
+                 slider: thirdColorSlider)
     }
     
     // MARK: — Private methods for UI
@@ -76,25 +73,13 @@ class ViewController: UIViewController {
     }
     
     private func setColor(valueLabel: UILabel,
-                          slider: UISlider,
-                          color: UIColor) {
+                          slider: UISlider) {
         let currentValueForLabel = String(format: "%.2f", slider.value)
         valueLabel.text = currentValueForLabel
         
-        switch color {
-        case .red:
-            colorRed = CGFloat(slider.value)
-        case .green:
-            colorGreen = CGFloat(slider.value)
-        case .blue:
-            colorBlue = CGFloat(slider.value)
-        default:
-            break
-        }
-        
-        let currentColor = UIColor(red: colorRed,
-                                   green: colorGreen,
-                                   blue: colorBlue,
+        let currentColor = UIColor(red: CGFloat(firstColorSlider.value),
+                                   green: CGFloat(secondColorSlider.value),
+                                   blue: CGFloat(thirdColorSlider.value),
                                    alpha: 1)
         
         mainColorView.backgroundColor = currentColor
