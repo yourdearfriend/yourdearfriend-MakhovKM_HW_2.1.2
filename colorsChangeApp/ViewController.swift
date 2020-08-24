@@ -38,6 +38,10 @@ class ViewController: UIViewController {
                     text: "Blue:", color: .blue)
         
         mainColorView.layer.cornerRadius = 10
+        mainColorView.backgroundColor = UIColor(red: 0,
+                                                green: 0,
+                                                blue: 0,
+                                                alpha: 1)
     }
     
     // MARK: - IB Actions
